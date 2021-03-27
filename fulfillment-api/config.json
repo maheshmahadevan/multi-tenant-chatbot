@@ -1,0 +1,109 @@
+{
+    "configs": [
+        {
+            "customer_id": "abc_car",
+            "welcome_messages": {
+                "morning": "Welcome to ABC Car Dealership, please say in words where you want to redirect your call , for example , say Sales or Connect me to Service",
+                "afternoon": "Welcome to ABC Car Dealership, please say in words where you want to redirect your call , for example , say Sales or Connect me to Service",
+                "evening": "Welcome to ABC Car Dealership, Sorry we are closed at this hour , please call back during working hours"
+            },
+            "action": {
+                "morning": "SET_CONTEXT",
+                "afternoon": "SET_CONTEXT",
+                "evening": "RESET_CONTEXT"
+            },
+            "menus": [
+                "sales",
+                "service",
+                "finance"
+            ],
+            "menu_configs": {
+                "sales": {
+                    "welcome_messages": {
+                        "morning": "BMW , Audi or Mercedes",
+                        "afternoon": "BMW , Audi or Mercedes",
+                        "evening": "Sorry we are not available this time"
+                    },
+                    "menus": [
+                        "bmw",
+                        "audi",
+                        "mercedes"
+                    ],
+                    "action": {
+                        "morning": "SET_CONTEXT",
+                        "afternoon": "SET_CONTEXT",
+                        "evening": "RESET_CONTEXT"
+                    },
+                    "menu_configs": {
+                        "bmw": {
+                            "action": {
+                                "all": "TRANSFER"
+                            }
+                        },
+                        "audi": {
+                            "action": {
+                                "all": "TRANSFER"
+                            }
+                        },
+                        "mercedes": {
+                            "action": {
+                                "all": "TRANSFER"
+                            }
+                        }
+                    }
+                },
+                "service": {
+                    "action": {
+                        "all": "TRANSFER"
+                    }
+                },
+                "finance": {
+                    "action": {
+                        "all": "TRANSFER"
+                    }
+                }
+            }
+        },
+        {
+            "customer_id": "abc_health",
+            "welcome_messages": {
+                "morning": "Welcome to ABC Health Care , please say in words where you want to redirect your call , for example , say Radiology or Connect me to Cardio",
+                "afternoon": "Welcome to ABC Health Care , please say in words where you want to redirect your call , for example , say Radiology or Connect me to Cardio",
+                "evening": "Welcome to ABC Health Care , please say in words where you want to redirect your call , for example , say Radiology or Connect me to Cardio"
+            },
+            "action": {
+                "morning": "SET_CONTEXT",
+                "afternoon": "SET_CONTEXT",
+                "evening": "SET_CONTEXT"
+            },
+            "menus": [
+                "radiology",
+                "oncology",
+                "trauma",
+                "cardio"
+            ],
+            "menu_configs": {
+                "radiology": {
+                    "action": {
+                        "all": "TRANSFER"
+                    }
+                },
+                "oncology": {
+                    "action": {
+                        "all": "TRANSFER"
+                    }
+                },
+                "trauma": {
+                    "action": {
+                        "all": "TRANSFER"
+                    }
+                },
+                "cardio": {
+                    "action": {
+                        "all": "TRANSFER"
+                    }
+                }
+            }
+        }
+    ]
+}
