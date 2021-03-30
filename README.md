@@ -2,14 +2,15 @@
 
 ## Setup
 
-You can follow my article on setup. In short, you will need to follow below steps.
+Please follow this [article](https://blog.maheshmahadevan.com/a-multi-tenant-chatbot-with-dialogflow-part-2-implementation-79c049393f89) on setup which describes the below steps in details with screenshots. 
+In short, you will need to follow below steps.
 
 * Clone this repository
 * Sign-in to Dialogflow and create an [account](https://cloud.google.com/dialogflow/docs/editions#es-agent).
 * Create Agent and Intents.Follow this guide. which has step-by-step instructions on how to do this.
 * Set up Authentication as directed in this [link](https://cloud.google.com/docs/authentication/getting-started)
-* Set up Fulfillment webhook. Follow the guide.
-* Invoke the Intent Detection API.
+* Set up Fulfillment webhook. Follow the [guide](https://blog.maheshmahadevan.com/a-multi-tenant-chatbot-with-dialogflow-part-2-implementation-79c049393f89).
+* Invoke the Intent Detection API. Examples below.
 
 ## REST Call Examples
 
